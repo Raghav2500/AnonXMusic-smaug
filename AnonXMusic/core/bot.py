@@ -5,6 +5,13 @@ import config
 
 from ..logging import LOGGER
 
+proxy = {
+    "scheme": "http",  # "socks4", "socks5" and "http" are supported
+    "hostname": "proxy.proxyverse.io",
+    "port": 9200,
+    "username": "country-us-session-ee878984076e46ccb01747f65fa81f5e",
+    "password": "cafef5f3-a6aa-42d5-a8c4-d7c67c43348c"
+}
 
 class Anony(Client):
     def __init__(self):
@@ -14,6 +21,7 @@ class Anony(Client):
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
+            proxy=proxy,
             in_memory=True,
             parse_mode=ParseMode.HTML,
             max_concurrent_transmissions=7,
