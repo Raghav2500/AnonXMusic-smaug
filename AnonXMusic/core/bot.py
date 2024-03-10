@@ -4,14 +4,14 @@ from pyrogram.enums import ChatMemberStatus, ParseMode
 import config
 
 from ..logging import LOGGER
-
-proxy = {
+proxy = (
     "scheme": "http",  # "socks4", "socks5" and "http" are supported
     "hostname": "proxy.proxyverse.io",
-    "port": 9200,
+    "port": "9200",
     "username": "country-in",
     "password": "9b01816d-048c-42e7-8686-411f91665d28"
-}
+)
+
 class Anony(Client):
     def init(self):
         LOGGER(name).info(f"Starting Bot...")
