@@ -4,6 +4,7 @@ from pyrogram.enums import ChatMemberStatus, ParseMode
 import config
 
 from ..logging import LOGGER
+
 proxy = {
     "scheme": "http",  # "socks4", "socks5" and "http" are supported
     "hostname": "proxy.proxyverse.io",
