@@ -18,7 +18,7 @@ class Anony(Client):
     def init(self):
         LOGGER(name).info(f"Starting Bot...")
         super().init(
-            name="AnonXmusic-smaug",
+            name="AnonXMusic",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
